@@ -1,0 +1,13 @@
+# Office Add-in Dev Certs (CRITICAL: Do not leak these)
+.office-addin-dev-certs/
+localhost.crt
+localhost.key
+
+# Node/Build artifacts
+node_modules/
+package-lock.json
+dist/
+
+# System files
+.DS_Store
+Thumbs.db

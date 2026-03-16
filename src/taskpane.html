@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lazy Code</title>
+    <script
+      src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="taskpane.css" />
+  </head>
+  <body>
+    <main>
+      <h2>L-Code</h2>
+      <p>Select your snippet, then click format.</p>
+
+      <div style="margin-bottom: 10px">
+        <label
+          for="lang-select"
+          style="
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+          "
+          >Language Engine:</label
+        >
+        <select
+          id="lang-select"
+          style="
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+          "
+        >
+          <option value="cpp">C++</option>
+          <option value="go">Go (Golang)</option>
+          <option value="javascript">JavaScript / React</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 15px">
+        <label
+          for="theme-select"
+          style="
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+          "
+          >Theme:</label
+        >
+        <select
+          id="theme-select"
+          style="
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+          "
+        >
+          <option value="dark">VS Code Dark+</option>
+          <option value="light">Academic Light</option>
+        </select>
+      </div>
+      <div style="margin-bottom: 15px; display: flex; align-items: center">
+        <input
+          type="checkbox"
+          id="inline-check"
+          style="margin-right: 8px; width: 16px; height: 16px"
+        />
+        <label for="inline-check" style="font-size: 14px; cursor: pointer"
+          >Inline Code (No Box)</label
+        >
+      </div>
+
+      <button id="format-btn">Format Code</button>
+      <div
+        id="error-msg"
+        style="
+          color: #d13438;
+          background-color: #fdf2f2;
+          border-left: 3px solid #d13438;
+          padding: 8px;
+          margin-top: 15px;
+          font-size: 13px;
+          display: none;
+        "
+      ></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+    <script src="theme.js"></script>
+    <script src="ooxml.js"></script>
+    <script src="taskpane.js"></script>
+    <script src="settings.js"></script>
+    <script src="lang.js"></script>
+  </body>
+</html>

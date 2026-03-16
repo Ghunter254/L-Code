@@ -13,9 +13,9 @@
   <DisplayName DefaultValue="L-Code" />
   <Description DefaultValue="Premium native code formatting for Word." />
   
-  <SupportUrl DefaultValue="https://localhost:3000" />
+  <SupportUrl DefaultValue="https://Ghunter254.github.io/L-Code/src/" />
   <AppDomains>
-    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://Ghunter254.github.io/L-Code/src/</AppDomain>
   </AppDomains>
 
   <Hosts>
@@ -23,7 +23,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/src/taskpane.html" />
+    <SourceLocation DefaultValue="https://Ghunter254.github.io/L-Code/src/taskpane.html" />
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>
